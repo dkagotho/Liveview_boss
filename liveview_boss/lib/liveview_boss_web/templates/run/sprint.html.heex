@@ -1,0 +1,23 @@
+<section class="">
+  <div style="height:500px" class="block box-border h-90 w-45 border-4">
+  <div id='map' style='width: 100%; height: 100%;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZGthZ290aG8iLCJhIjoiY2t2OGh4N2UxOXRqNzJwbW5jdDNmMjA4bSJ9.9i2E_CiyuHSvBko4SY2eAg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+  });
+</script>
+
+  </div>
+  <div style="height:90px"class="block box-border h-100 w-45 p-4 border-4">
+  <p>Progress Bar</p>
+  <p><%= eta() %></p>
+  <button phx-click="refresh">Refresh</button>
+  </div>
+ 
+</section>
+
+<section class="row">
+  
+</section>
